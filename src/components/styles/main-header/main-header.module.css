@@ -1,0 +1,33 @@
+.header {
+    @apply flex justify-between items-center px-4 py-8 md:py-8 md:px-[10%];
+}
+
+.nav ul {
+    @apply list-none m-0 p-0 flex gap-6 text-xl/normal font-montserrat;
+}
+
+.nav a {
+    @apply text-[#ddd6cb] font-bold py-2 px-4 rounded-lg;
+}
+.nav a:hover,
+.nav a:active {
+    background: linear-gradient(90deg, #ff8a05, #f9b331);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
+}
+
+.active {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#ff8a05] to-[#f9b331];
+}
+
+.logo {
+    @apply flex items-center justify-center gap-8 text-[#ddd6cb] font-bold font-montserrat text-2xl/normal uppercase;
+    letter-spacing: 0.15rem;
+}
+
+.logo img {
+    @apply w-20 h-20 object-contain;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+}

@@ -1,0 +1,42 @@
+.header {
+    @apply flex gap-12 my-12 mx-auto w-[90%] max-w-[75rem];
+}
+
+.slideshow {
+    @apply w-[40rem] h-[25rem];
+}
+
+.hero {
+    @apply text-[#ddd6cb] text-2xl/normal;
+}
+
+.hero h1 {
+    @apply text-[2rem] font-bold font-montserrat uppercase bg-gradient-to-r from-[#f9572a] to-[#ffc905] bg-clip-text text-transparent;
+    letter-spacing: 0.15rem;
+}
+
+.cta {
+    @apply text-2xl/normal flex gap-4;
+}
+
+.cta a {
+    @apply inline-block mt-4 py-1 px-4 rounded-lg bg-gradient-to-r from-[#f9572a] to-[#ff9b05] text-white font-bold;
+}
+
+.cta a:hover,
+.cta a:active {
+    @apply bg-gradient-to-r from-[#fd4715] to-[#f9b241];
+}
+
+.cta a:first-child {
+    @apply bg-none font-normal text-[#ff9b05] pl-0;
+}
+
+.cta a:first-child:hover,
+.cta a:first-child:active {
+    @apply bg-none text-[#f9b241];
+}
+
+.section {
+    @apply flex flex-col text-[#ddd6cb] text-2xl/normal max-w-[50rem] w-[90%] mx-auto my-8 text-center;
+}
