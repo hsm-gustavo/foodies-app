@@ -1,5 +1,5 @@
 import Link from "next/link"
-import style from "@/styles/page.module.css"
+import style from "./page.module.css"
 import ImageSlideshow from "@/components/images/image-slideshow"
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
             </header>
             <main>
                 <section className={style.section}>
-                    <h2>How it works</h2>
+                    <h2 className="text-2xl font-semibold">How it works</h2>
                     <p>
                         NextLevel Food is a platform for foodies to share their
                         favorite recipes with the world. It&apos;s a place to
@@ -36,7 +36,9 @@ export default function Home() {
                 </section>
 
                 <section className={style.section}>
-                    <h2>Why NextLevel Food?</h2>
+                    <h2 className="text-2xl font-semibold">
+                        Why NextLevel Food?
+                    </h2>
                     <p>
                         NextLevel Food is a platform for foodies to share their
                         favorite recipes with the world. It&apos;s a place to

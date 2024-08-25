@@ -1,7 +1,28 @@
+import style from "@/app/meals/page.module.css"
+import MealsGrid from "@/components/meals/meals-grid"
+import Link from "next/link"
+
 export default function Meals() {
     return (
-        <main>
-            <h1 className="text-white text-center">Delicious meals, shared by a food-loving community.</h1>
-        </main>
+        <>
+            <header className={style.header}>
+                <h1>
+                    Delicious meals, created{" "}
+                    <span className={style.highlight}>by you</span>
+                </h1>
+                <p>
+                    Choose your favorite recipe and cook it yourself. It is easy
+                    and fun!
+                </p>
+                <p className={style.cta}>
+                    <Link href={"/meals/share"}>
+                        Share Your Favorite Recipe
+                    </Link>
+                </p>
+            </header>
+            <main className={style.main}>
+                <MealsGrid meals={[]}/>
+            </main>
+        </>
     )
 }

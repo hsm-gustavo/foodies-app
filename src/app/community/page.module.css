@@ -1,0 +1,35 @@
+.header {
+    @apply gap-12 mx-auto mt-12 mb-20 w-[90%] max-w-[75rem] text-[#ddd6cb] text-2xl/normal text-center;
+}
+
+.header h1 {
+    @apply font-montserrat text-5xl/relaxed;
+}
+
+.highlight {
+    @apply bg-gradient-to-r from-[#f9572a] to-[#ffc905] bg-clip-text text-transparent;
+}
+
+.main {
+    @apply w-[90%] max-w-[40rem] my-0 mx-auto text-center;
+}
+
+.main h2 {
+    @apply font-montserrat text-[2rem]/normal text-[#ddd6cb] mb-12 font-bold;
+}
+
+.perks {
+    @apply list-none my-12 mx-0 p-0;
+}
+
+.perks li {
+    @apply flex flex-col items-center gap-8;
+}
+
+.perks img {
+    @apply w-32 h-32 object-contain;
+}
+
+.perks p {
+    @apply font-montserrat text-2xl/normal text-[#ddd6cb] font-bold m-0;
+}
