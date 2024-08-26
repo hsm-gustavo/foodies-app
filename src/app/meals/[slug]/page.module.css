@@ -7,11 +7,13 @@
 }
 
 .header img {
-    @apply object-cover rounded-lg shadow-[0_0_0.5rem_rgba(0,0,0,0.5)] animate-[fade-slide-in-from-left_1s_ease-out_forwards];
+    @apply object-cover rounded-lg shadow-[0_0_0.5rem_rgba(0,0,0,0.5)];
+    animation: fade-slide-in-from-left 1s ease-out forwards;
 }
 
 .headerText {
-    @apply px-4 pt-2 pb-0 text-[#ddd6cb] max-w-[40rem] animate-[fade-slide-in-from-right_1s_ease-out_forwards];
+    @apply px-4 pt-2 pb-0 text-[#ddd6cb] max-w-[40rem];
+    animation: fade-slide-in-from-right 1s ease-out forwards;
 }
 
 .headerText h1 {
@@ -39,11 +41,13 @@
 }
 
 .instructions {
-    @apply text-xl bg-[#6e6464] text-[#13120f] rounded-lg shadow-[0_0_0.5rem_rgba(0,0,0,0.5)] p-8 max-w-[60rem] my-8 mx-auto animate-[fade_slide-in-from-bottom_1s_ease-out_forwards];
+    @apply text-xl bg-[#6e6464] text-[#13120f] rounded-lg shadow-[0_0_0.5rem_rgba(0,0,0,0.5)] p-8 max-w-[60rem] my-8 mx-auto;
+    animation: fade-slide-in-from-bottom 1s ease-out forwards;
 }
 
 .loading {
-    @apply text-5xl text-center text-[#ddd6cb] font-bold animate-[flash_1s_ease-in-out_infinite_alternate];
+    @apply text-5xl text-center text-[#ddd6cb] font-bold;
+    animation: flash 1s ease-in-out infinite alternate;
 }
 
 @keyframes fade-slide-in-from-left {
