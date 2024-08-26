@@ -7,10 +7,10 @@ import { Suspense } from "react"
 /* Realizes the fetch and acts as the component that needs fetching */
 async function Meals() {
     const meals = await getMeals()
-    return <MealsGrid meals={[meals]} />
+    return <MealsGrid meals={meals} />
 }
 
-export default async function MealsPage() {
+export default function MealsPage() {
     return (
         <>
             <header className={style.header}>

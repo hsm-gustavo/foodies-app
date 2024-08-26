@@ -14,7 +14,6 @@ export default function MealsGrid({
         creator_email: string
     }[]
 }) {
-    meals = meals.flat()
 
     return (
         <ul className={style.meals}>

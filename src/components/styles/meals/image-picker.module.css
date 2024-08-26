@@ -1,0 +1,27 @@
+.controls {
+    @apply flex items-start gap-6 mb-4;
+}
+
+.picker .input {
+    display: none;
+}
+
+.picker .button {
+    @apply border-[2px] py-2 px-6 bg-[#a4abb9] rounded-sm cursor-pointer font-[inherit] text-black;
+}
+
+.picker .button:hover .picker .button:focus {
+    @apply bg-[#b3b9c6];
+}
+
+.preview {
+    @apply w-40 h-40 border-[#a4abb9] border-solid border-2 flex justify-center items-center text-center text-[#a4abb9] relative;
+}
+
+.preview p {
+    @apply m-0 p-4;
+}
+
+.preview img {
+    @apply object-cover;
+}
