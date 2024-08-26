@@ -15,7 +15,7 @@ export async function getMeal(slug: string) {
 }
 
 export async function createMeal(meal: {
-    slug: undefined | string
+    slug?: string
     title: string
     image: File | string
     summary: string
