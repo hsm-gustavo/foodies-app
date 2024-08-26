@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
 }
 
 export async function GET(req: NextRequest) {
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 5000))
     /* Arbitrary load simulation, not supposed to be in final code */
     const meals = await prisma.meal.findMany()
 

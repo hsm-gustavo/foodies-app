@@ -1,0 +1,92 @@
+.header {
+    @apply flex py-8 px-4 gap-12 m-auto max-w-[80rem];
+}
+
+.image {
+    @apply relative w-[30rem] h-[20rem];
+}
+
+.header img {
+    @apply object-cover rounded-lg shadow-[0_0_0.5rem_rgba(0,0,0,0.5)] animate-[fade-slide-in-from-left_1s_ease-out_forwards];
+}
+
+.headerText {
+    @apply px-4 pt-2 pb-0 text-[#ddd6cb] max-w-[40rem] animate-[fade-slide-in-from-right_1s_ease-out_forwards];
+}
+
+.headerText h1 {
+    @apply m-0 text-6xl uppercase font-montserrat;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.creator {
+    @apply text-2xl text-[#cfa69b] italic;
+}
+
+.creator a {
+    @apply bg-gradient-to-r from-[#f9572a] to-[#ff8a05] bg-clip-text text-transparent;
+}
+
+.creator a:hover,
+.creator a:active {
+    @apply bg-gradient-to-r from-[#f9572a] to-[#ff8a05] bg-clip-text text-transparent;
+
+    text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
+}
+
+.summary {
+    @apply text-2xl;
+}
+
+.instructions {
+    @apply text-xl bg-[#6e6464] text-[#13120f] rounded-lg shadow-[0_0_0.5rem_rgba(0,0,0,0.5)] p-8 max-w-[60rem] my-8 mx-auto animate-[fade_slide-in-from-bottom_1s_ease-out_forwards];
+}
+
+.loading {
+    @apply text-5xl text-center text-[#ddd6cb] font-bold animate-[flash_1s_ease-in-out_infinite_alternate];
+}
+
+@keyframes fade-slide-in-from-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-slide-in-from-right {
+    0% {
+        opacity: 0;
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-slide-in-from-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

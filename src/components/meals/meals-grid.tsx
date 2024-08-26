@@ -6,18 +6,21 @@ export default function MealsGrid({
 }: {
     meals: {
         id: number
-        title: string
         slug: string
+        title: string
         image: string
         summary: string
         creator: string
+        creator_email: string
     }[]
 }) {
+    meals = meals.flat()
+
     return (
         <ul className={style.meals}>
             {meals.map((meal) => (
                 <li key={meal.id}>
-                    <MealItem {...meal} />
+                    <MealItem image={meal.image} creator={meal.creator} slug={meal.slug} summary={meal.summary} title={meal.title} />
                 </li>
             ))}
         </ul>
