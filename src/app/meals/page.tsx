@@ -4,6 +4,11 @@ import { getMeals } from "@/services/meals"
 import Link from "next/link"
 import { Suspense } from "react"
 
+export const metadata = {
+    title: "All Meals",
+    description: "Browse the delicious meals shared by our vibrant community",
+}
+
 /* Realizes the fetch and acts as the component that needs fetching */
 async function Meals() {
     const meals = await getMeals()
